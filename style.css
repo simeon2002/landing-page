@@ -82,16 +82,26 @@ a {
   font-size: 48px;
 }
 
-.hero-content button {
+button {
   box-sizing: border-box;
-  border-radius: 0 10px 10px 0;
-  background-color: #3882f6;
-  border: none;
   color: #f9faf8;
   font-size: 18px;
   padding: 5px 10px;
   height: 50px;
   width: 150px;
+  border-radius: 0 10px 10px 0;
+  background-color: #3882f6;
+  border: none;
+}
+
+#hero-button {
+  border: 1px solid black;
+  transition: all 0.5s ease-in 0.5s;
+}
+#hero-button:hover {
+  color: #1f2937;
+  background-color: #f9faf8;
+  border: 1px solid black;
 }
 
 .newsletter {
@@ -109,9 +119,102 @@ input {
   height: 48px; /* Needed because border of 1px*/
   flex: 0 1 auto;
   font-size: 18px;
+  padding-left: 10px;
 }
 
 ::placeholder {
   opacity: 0.7;
   font-size: 18px;
+}
+
+/* for section two */
+.shoe img {
+  width: 400px;
+  height: 400px;
+}
+
+.section-two {
+  padding: 80px;
+}
+
+.section-two h2 {
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1f2937;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.shoes-main {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.shoe-description {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* For section three */
+.section-three {
+  padding: 200px;
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-weight: light italic;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* for section four */
+.section-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.card {
+  background-color: #3882f6;
+  border-radius: 10px;
+  color: #f9faf8;
+  display: flex;
+  gap: 120px;
+  justify-content: space-around;
+  padding: 40px 80px;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #e5e7eb;
+}
+
+.card button {
+  border-radius: 10px;
+  border: 2px solid #f9faf8;
+  transition: all 0.5s ease-in 0.5s;
+}
+
+.card button:hover {
+  background-color: #f9faf8;
+  color: #3882f6;
+  border: 2px solid black;
+  width: 170px;
+  height: 55px;
+}
+
+/* For the footer */
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
